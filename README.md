@@ -10,7 +10,7 @@ SecureZip is a Python program that allows users to create encrypted ZIP archives
 
 **Requirements:**
 
-* Python 3 (tested with 3.x versions)
+* Python 3.x
 * `pyzipper` library
 
 **Setting Up a Virtual Environment:**
@@ -37,7 +37,7 @@ python -m venv venv
        source venv/bin/activate
        ```
 
-**Install:**
+**Installing packages:**
 
 Once you have activated the virtual environment, you can install the required dependencies:
 
@@ -56,14 +56,11 @@ pip install -r requirements.txt
     * Run the script with `python main.py`. Make sure you have activated the virtual environment.
 
 2. **Enter path and password:**
-    * The script will prompt you for the file/folder path.
-    * Enter the full path to the file or directory you want to zip.
-    * You'll then be prompted for a password.
-    * Enter your desired password (leave blank for a random one).
+    * The script will prompt you for the file/folder path. Enter the full path to the file or directory you want to zip.
+    * You'll then be prompted for a password. Enter your desired password (leave blank for a random one).
 
 3. **Success message:**
     * Upon successful zip creation, the script will display the location of the created zip file and the password.
 
 **Contributing:**
-
-Feel free to fork the repository and submit pull requests with improvements or bug fixes.
+   * Feel free to fork the repository and submit pull requests with improvements or bug fixes.

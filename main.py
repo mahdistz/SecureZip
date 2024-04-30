@@ -26,7 +26,6 @@ def create_zip_with_password(item_path, password, zip_files_path):
 
                 zf.setpassword(bytes(password, 'utf-8'))
                 zf.write(item_path, os.path.basename(item_path))
-            logging.info(f"Zip file created at: {zip_file_path}")
 
         elif os.path.isdir(item_path):
             zip_file_path = os.path.join(zip_files_path, f"{os.path.basename(item_path)}.zip")
@@ -39,7 +38,7 @@ def create_zip_with_password(item_path, password, zip_files_path):
                         file_path = os.path.join(root, file)
                         zf.write(file_path, os.path.relpath(file_path, item_path))
 
-            logging.info(f"Zip file created at: {zip_file_path}")
+        logging.info(f"Zip file created at: {zip_file_path}")
         logging.info(f"Password: {password}")
 
     except Exception as e:
