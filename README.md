@@ -10,7 +10,7 @@ SecureZip is a Python program that allows users to create encrypted ZIP archives
 
 **Requirements:**
 
-* Python 3.x
+* Python  >=3.4
 * `pyzipper` library
 
 **Setting Up a Virtual Environment:**
